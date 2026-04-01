@@ -21,7 +21,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         </h1>
 
         <p className="text-2xl sm:text-3xl md:text-4xl text-red-500 mb-4 animate-flicker">
-          EXPERIENCE
+          EXPERIENC
         </p>
 
         <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
