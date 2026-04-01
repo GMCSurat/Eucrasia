@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 hover:text-red-500 transition-colors">
                 <Mail size={20} />
-                <span>event@upsidedown.com</span>
+                <span>gmcsstudent2025@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 hover:text-red-500 transition-colors">
                 <Phone size={20} />

@@ -15,7 +15,7 @@ export default function Registration() {
       { name: "Batch 107", link: "https://docs.google.com/forms/d/1tJAegqXvEMyk3Huyd0LxkMMUL4nIe_BEDVG3DqlPjXc/viewform?usp=header" },
     ],
     PG: [
-      { name: "PGY", link: "https://docs.google.com/forms/d/13O2StsfXDT_xcnbRE0KPusXRSd_BGL6G_viRv7W6ByU/viewform?usp=header" }
+      { name: "PG Registration", link: "https://docs.google.com/forms/d/13O2StsfXDT_xcnbRE0KPusXRSd_BGL6G_viRv7W6ByU/viewform?usp=header" }
     ],
     OTHER: [
       { name: "Other College Registration", link: "https://docs.google.com/forms/d/1zaNdx0IjS1Uomfuo40MPJ69JCuY6nAS8ujM0if5gnmQ/viewform?usp=header" }
@@ -34,9 +34,9 @@ export default function Registration() {
       button: "bg-blue-600 hover:bg-blue-700",
     },
     OTHER: {
-      border: "border-green-500",
-      text: "text-green-500",
-      button: "bg-green-600 hover:bg-green-700",
+      border: "border-purple-500",
+      text: "text-purple-500",
+      button: "bg-purple-600 hover:bg-purple-700",
     },
   };
 

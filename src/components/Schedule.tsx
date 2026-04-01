@@ -97,7 +97,6 @@ export default function Schedule() {
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           {[
             { label: 'Competition', type: 'competition' },
-            { label: 'Workshop',    type: 'workshop' },
             { label: 'Ceremony',    type: 'ceremony' },
             { label: 'General',     type: 'general' },
           ].map((item) => (
