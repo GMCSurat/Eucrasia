@@ -31,7 +31,7 @@ export default function Navigation({ onNavigate }: NavigationProps) {
               className="text-2xl font-bold text-red-600 neon-text cursor-pointer"
               onClick={() => handleClick('home')}
             >
-              Eucrasia 2026
+              EUCRASIA 2026
             </h1>
           </div>
 

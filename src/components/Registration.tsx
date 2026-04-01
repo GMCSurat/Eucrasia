@@ -6,7 +6,6 @@ export default function Registration() {
     "UG" | "PG" | "OTHER" | null
   >(null);
 
-  // 🔥 Replace these with your actual Google Form links
   const forms = {
     UG: [
       { name: "Batch 103", link: "https://docs.google.com/forms/d/19W3ZxE_DDxaJ3agZiFzd-dFhaufKbTU5WiTPRWEiPvc/viewform?usp=header" },
@@ -23,89 +22,79 @@ export default function Registration() {
     ],
   };
 
-  return (
-    <section
-      id="registration"
-      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-black relative"
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/10 to-black"></div>
+  const colorClasses = {
+    UG: {
+      border: "border-red-500",
+      hover: "hover:border-red-500",
+      text: "text-red-500",
+      button: "bg-red-600 hover:bg-red-700",
+    },
+    PG: {
+      border: "border-blue-500",
+      hover: "hover:border-blue-500",
+      text: "text-blue-500",
+      button: "bg-blue-600 hover:bg-blue-700",
+    },
+    OTHER: {
+      border: "border-green-500",
+      hover: "hover:border-green-500",
+      text: "text-green-500",
+      button: "bg-green-600 hover:bg-green-700",
+    },
+  };
 
-      <div className="max-w-6xl mx-auto relative z-10">
+  const handleClick = (category: "UG" | "PG" | "OTHER") => {
+    setSelectedCategory((prev) => (prev === category ? null : category));
+  };
+
+  return (
+    <section className="min-h-screen py-20 px-4 bg-black">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-bold text-red-600 mb-4">
-            REGISTRATION
-          </h2>
-          <p className="text-gray-400 text-lg">
-            Mandatory for all participants • Valid for 4-day event access
-          </p>
-        </div>
+        <h2 className="text-5xl font-bold text-red-600 text-center mb-16">
+          REGISTRATION
+        </h2>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {/* UG */}
-          <div
-            onClick={() => setSelectedCategory("UG")}
-            className={`p-8 rounded-lg border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-              selectedCategory === "UG"
-                ? "border-red-500 bg-red-950/20"
-                : "border-gray-700 bg-gray-900/50 hover:border-red-500"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-3xl font-bold text-red-500">
-                UG Registration
-              </h3>
-              <UserPlus className="text-red-500" size={32} />
-            </div>
-            <p className="text-5xl font-bold text-white mb-4">₹400</p>
-            <p className="text-gray-400">For undergraduate students</p>
-          </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {["UG", "PG", "OTHER"].map((category) => (
+            <div
+              key={category}
+              onClick={() =>
+                handleClick(category as "UG" | "PG" | "OTHER")
+              }
+              className={`p-8 rounded-lg border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
+                selectedCategory === category
+                  ? colorClasses[category].border
+                  : `border-gray-700 ${colorClasses[category].hover}`
+              } bg-gray-900/50`}
+            >
+              <div className="flex justify-between mb-4">
+                <h3
+                  className={`text-3xl font-bold ${colorClasses[category].text}`}
+                >
+                  {category === "UG"
+                    ? "UG Registration"
+                    : category === "PG"
+                    ? "PG Registration"
+                    : "Other College"}
+                </h3>
+                <UserPlus
+                  className={colorClasses[category].text}
+                  size={32}
+                />
+              </div>
 
-          {/* PG */}
-          <div
-            onClick={() => setSelectedCategory("PG")}
-            className={`p-8 rounded-lg border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-              selectedCategory === "PG"
-                ? "border-blue-500 bg-blue-950/20"
-                : "border-gray-700 bg-gray-900/50 hover:border-blue-500"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-3xl font-bold text-blue-500">
-                PG Registration
-              </h3>
-              <UserPlus className="text-blue-500" size={32} />
+              <p className="text-gray-400">
+                Click to view registration forms
+              </p>
             </div>
-            <p className="text-5xl font-bold text-white mb-4">₹600</p>
-            <p className="text-gray-400">For postgraduate students</p>
-          </div>
-
-          {/* OTHER */}
-          <div
-            onClick={() => setSelectedCategory("OTHER")}
-            className={`p-8 rounded-lg border-2 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-              selectedCategory === "OTHER"
-                ? "border-green-500 bg-green-950/20"
-                : "border-gray-700 bg-gray-900/50 hover:border-green-500"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-3xl font-bold text-green-500">
-                Other College
-              </h3>
-              <UserPlus className="text-green-500" size={32} />
-            </div>
-            <p className="text-5xl font-bold text-white mb-4">₹500</p>
-            <p className="text-gray-400">
-              For participants from other colleges
-            </p>
-          </div>
+          ))}
         </div>
 
-        {/* Links Section */}
+        {/* EXPANSION PANEL */}
         {selectedCategory && (
-          <div className="max-w-2xl mx-auto bg-gray-900/50 backdrop-blur-md p-8 rounded-lg border border-gray-800">
+          <div className="mt-12 max-w-3xl mx-auto bg-gray-900/60 backdrop-blur-md p-8 rounded-xl border border-gray-800 animate-fadeIn">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               {selectedCategory === "UG"
                 ? "UG Event Registrations"
@@ -121,12 +110,8 @@ export default function Registration() {
                   href={form.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block p-4 rounded-lg text-white font-semibold text-center transition-all duration-300 ${
-                    selectedCategory === "UG"
-                      ? "bg-red-600 hover:bg-red-700"
-                      : selectedCategory === "PG"
-                      ? "bg-blue-600 hover:bg-blue-700"
-                      : "bg-green-600 hover:bg-green-700"
+                  className={`block w-full text-center p-4 rounded-lg font-semibold text-white transition-all duration-300 ${
+                    colorClasses[selectedCategory].button
                   }`}
                 >
                   {form.name}

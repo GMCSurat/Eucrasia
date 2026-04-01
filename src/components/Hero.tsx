@@ -15,9 +15,9 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <h1
           className="text-6xl sm:text-7xl md:text-8xl font-bold mb-6 text-large text-red-600"
-          data-text="Eucrasia 2026"
+          data-text="EUCRASIA 2026"
         >
-          Eucrasia 2026
+          EUCRASIA 2026
         </h1>
 
         <p className="text-2xl sm:text-3xl md:text-4xl text-red-500 mb-4 animate-flicker">

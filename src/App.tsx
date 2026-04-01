@@ -32,9 +32,9 @@ function App() {
         <div className="text-center">
           <h1
             className="text-6xl font-bold text-red-600 text-large mb-8  animate-pulse"
-            data-text="Eucrasia 2026"
+            data-text="EUCRASIA 2026"
           >
-            Eucrasia 2026
+            EUCRASIA 2026
           </h1>
           <div className="flex justify-center gap-2">
             <div className="w-3 h-3 bg-red-600 rounded-full animate-bounce"></div>
