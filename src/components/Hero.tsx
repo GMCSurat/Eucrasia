@@ -15,14 +15,17 @@ export default function Hero({ onNavigate }: HeroProps) {
   }}
 >
 <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black via-red-950/20 to-black"></div>
-<div className="absolute inset-0 w-full h-full opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600 rounded-full blur-[120px] animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full blur-[120px] animate-pulse delay-1000"></div>
+<div className="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+  <div className="relative z-10 text-center w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center"></div>
+  </div>
+        <div className="absolute top-1/4 left-1/4 w-40 h-40 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-red-600 rounded-full blur-[120px] animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-blue-600 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       </div>
 
 <div className="relative z-10 text-center w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1
-          className="text-6xl sm:text-a7xl md:text-8xl font-bold mb-6 text-large text-red-600"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight font-bold mb-6 text-large text-red-600"
           data-text="EUCRASIA 2026"
         >
           EUCRASIA 2026
