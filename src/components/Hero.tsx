@@ -10,11 +10,11 @@ export default function Hero({ onNavigate }: HeroProps) {
   style={{}}
 >
   <div
-  className="absolute inset-0 w-full h-full z-0 scale-105"
+  className="absolute inset-0 w-full h-full z-0"
   style={{
     backgroundImage: 'url(/Eucrasia/bg.png)',
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center left',
     backgroundRepeat: 'no-repeat',
   }}
 ></div>
@@ -26,7 +26,7 @@ export default function Hero({ onNavigate }: HeroProps) {
 
 <div className="relative z-10 text-center w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1
-          className="text-6xl sm:text-a7xl md:text-8xl font-bold mb-6 text-large text-red-600"
+          className="text-6xl sm:text-7xl md:text-8xl font-bold mb-6 text-large text-red-600"
           data-text="EUCRASIA 2026"
         >
           EUCRASIA 2026
