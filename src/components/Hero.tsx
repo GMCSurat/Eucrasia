@@ -60,7 +60,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         </div>
       </div>
 
-<div className="mt-10 sm:absolute sm:bottom-10 left-1/2 sm:transform sm:-translate-x-1/2 animate-bounce flex justify-center">
+<div className="mt-10 flex justify-center sm:absolute sm:bottom-10 sm:left-1/2 sm:-translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-red-500 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-red-500 rounded-full mt-2 animate-pulse"></div>
         </div>
