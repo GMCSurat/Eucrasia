@@ -8,13 +8,14 @@ interface NavigationProps {
 export default function Navigation({ onNavigate }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'registration', label: 'Registration' },
-    { id: 'tshirts', label: 'T-Shirts' },
-    { id: 'competitions', label: 'Competitions' },
-    { id: 'contact', label: 'Contact' },
-  ];
+ const menuItems = [
+  { id: 'home',         label: 'Home' },
+  { id: 'schedule',     label: 'Schedule' },   
+  { id: 'registration', label: 'Registration' },
+  { id: 'tshirts',      label: 'T-Shirts' },
+  { id: 'competitions', label: 'Competitions' },
+  { id: 'contact',      label: 'Contact' },
+];
 
   const handleClick = (id: string) => {
     onNavigate(id);

@@ -25,7 +25,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         </p>
 
         <p className="text-lg sm:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-          Enter the Eucrasia Experience
+          The Fest you can't Escape
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

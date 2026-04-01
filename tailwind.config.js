@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Bebas Neue"', 'cursive'],
-        body: ['"DM Sans"', 'sans-serif'],
+         display: ['"Rye"', 'serif'],
+  body: ['"DM Sans"', 'sans-serif'],
         mono: ['"Space Mono"', 'monospace'],
       },
       colors: {
