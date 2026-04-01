@@ -141,8 +141,10 @@ export default function Schedule() {
             {schedule[activeDay].events.map((event, index) => (
             <div
   key={index}
-  className={`relative sm:pl-14 rounded-lg border transition-all duration-300 ${typeStyles[event.type]} cursor-pointer`}
-  onClick={() => event.detail && setExpandedEvent(expandedEvent === index ? null : index)}
+  className={`relative sm:pl-14 rounded-lg border transition-all duration-300 ${typeStyles[event.type]} cursor-pointer ${
+  expandedEvent === index ? 'scale-[1.02]' : ''
+}`}
+  onClick={() => setExpandedEvent(expandedEvent === index ? null : index)}
 >
                 {/* Timeline dot */}
                 <div className={`absolute left-3.5 top-5 w-3 h-3 rounded-full border-2 border-black hidden sm:block ${typeDot[event.type]}`}></div>
@@ -155,7 +157,15 @@ export default function Schedule() {
                       <span className="font-mono">{event.time}</span>
                     </div>
                     {/* Title */}
-                    <div className="font-bold text-white truncate">{event.title}</div>
+                    <div
+  className={`font-bold text-white transition-all duration-300 ${
+    expandedEvent === index
+      ? 'whitespace-normal break-words'
+      : 'truncate'
+  }`}
+>
+  {event.title}
+</div>
                   </div>
 
                   <div className="flex items-center gap-3 shrink-0">
