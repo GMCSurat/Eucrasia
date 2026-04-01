@@ -44,24 +44,26 @@ export default function Countdown() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-4 gap-4">
-          {[
-            { label: 'Days', value: timeLeft.days },
-            { label: 'Hours', value: timeLeft.hours },
-            { label: 'Minutes', value: timeLeft.minutes },
-            { label: 'Seconds', value: timeLeft.seconds },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-gray-900/50 backdrop-blur-md p-6 rounded-lg border border-red-800/50 hover:border-red-500 transition-all duration-300 hover:neon-border text-center"
-            >
-              <div className="text-4xl sm:text-5xl font-bold text-red-500 mb-2 neon-text tabular-nums">
-                {String(item.value).padStart(2, '0')}
-              </div>
-              <div className="text-gray-400 text-sm sm:text-base">{item.label}</div>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+  {[
+    { label: 'Days', value: timeLeft.days },
+    { label: 'Hours', value: timeLeft.hours },
+    { label: 'Minutes', value: timeLeft.minutes },
+    { label: 'Seconds', value: timeLeft.seconds },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="bg-gray-900/50 backdrop-blur-md p-4 sm:p-6 rounded-lg border border-red-800/50 hover:border-red-500 transition-all duration-300 hover:neon-border text-center"
+    >
+      <div className="text-3xl sm:text-5xl font-bold text-red-500 mb-2 neon-text tabular-nums">
+        {String(item.value).padStart(2, '0')}
+      </div>
+      <div className="text-gray-400 text-xs sm:text-base break-words">
+        {item.label}
+      </div>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
