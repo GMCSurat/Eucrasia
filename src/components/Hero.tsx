@@ -14,7 +14,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   style={{
     backgroundImage: 'url(/Eucrasia/bg.png)',
     backgroundSize: 'cover',
-    backgroundPosition: 'center ',
+    backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
   }}
 ></div>

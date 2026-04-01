@@ -12,8 +12,8 @@ export default function Navigation({ onNavigate }: NavigationProps) {
   { id: 'home',         label: 'Home' },
   { id: 'schedule',     label: 'Schedule' },   
   { id: 'registration', label: 'Registration' },
-  { id: 'tshirts',      label: 'T-Shirts' },
   { id: 'competitions', label: 'Competitions' },
+  { id: 'tshirts',      label: 'Merchandise' },
   { id: 'contact',      label: 'Contact' },
 ];
 

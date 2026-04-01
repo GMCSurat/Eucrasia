@@ -28,7 +28,7 @@ function App() {
 
   if (showLoading) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="w-screen min-h-[100dvh] overflow-x-hidden bg-black">
         <div className="text-center">
           <h1
             className="text-6xl font-bold text-red-600 text-large mb-8  animate-pulse"
@@ -53,8 +53,8 @@ function App() {
       <Countdown />
       <Schedule /> 
       <Registration />
-      <TShirts />
       <Competitions />
+      <TShirts />
       <Footer />
     </div>
   );
