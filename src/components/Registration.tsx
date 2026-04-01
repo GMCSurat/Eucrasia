@@ -49,7 +49,7 @@ export default function Registration() {
       id="registration"
       className="py-16 px-4 bg-black" // ✅ removed min-h-screen
     >
-      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <h2 className="text-4xl sm:text-5xl font-bold text-red-600 text-center mb-12">
           REGISTRATION

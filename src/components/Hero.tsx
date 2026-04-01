@@ -4,17 +4,25 @@ interface HeroProps {
 
 export default function Hero({ onNavigate }: HeroProps) {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black" style={{ backgroundImage: 'url(/Eucrasia/bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-red-950/20 to-black"></div>
-
-      <div className="absolute inset-0 opacity-20">
+    <section
+  id="home"
+  className="relative w-screen min-h-[100dvh] flex items-center justify-center overflow-hidden bg-black left-1/2 right-1/2 -mx-[50vw]"
+  style={{
+    backgroundImage: 'url(/Eucrasia/bg.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+<div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black via-red-950/20 to-black"></div>
+<div className="absolute inset-0 w-full h-full opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600 rounded-full blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+<div className="relative z-10 text-center w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1
-          className="text-6xl sm:text-7xl md:text-8xl font-bold mb-6 text-large text-red-600"
+          className="text-6xl sm:text-a7xl md:text-8xl font-bold mb-6 text-large text-red-600"
           data-text="EUCRASIA 2026"
         >
           EUCRASIA 2026
