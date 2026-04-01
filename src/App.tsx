@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Countdown from './components/Countdown';
+import Schedule from './components/Schedule';
 import Registration from './components/Registration';
 import TShirts from './components/TShirts';
 import Competitions from './components/Competitions';
@@ -50,6 +51,7 @@ function App() {
       <Navigation onNavigate={handleNavigate} />
       <Hero onNavigate={handleNavigate} />
       <Countdown />
+      <Schedule /> 
       <Registration />
       <TShirts />
       <Competitions />

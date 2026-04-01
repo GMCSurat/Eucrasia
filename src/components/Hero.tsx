@@ -4,7 +4,7 @@ interface HeroProps {
 
 export default function Hero({ onNavigate }: HeroProps) {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black" style={{ backgroundImage: 'url(/Website_GMC/bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black via-red-950/20 to-black"></div>
 
       <div className="absolute inset-0 opacity-20">
