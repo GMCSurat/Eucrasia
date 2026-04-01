@@ -7,12 +7,12 @@ const schedule = [
     date: 'April 24, 2026',
     theme: 'Opening Ceremony & Kickoff',
     events: [
-      { time: '06:00 AM', title: 'Marathon', location: 'College Campus', type: 'general'},
-      { time: '08:00 AM', title: 'Inauguration', location: 'College Gate', type: 'ceremony' },
-      { time: '09:00 AM', title: 'Shadows On Fabric', location: 'Sushrut Hall', type: 'competition' },
+      { time: '06:00 AM', title: 'Marathon',location : 'College Campus', type: 'general', detail :[]},
+      { time: '08:00 AM', title: 'Inauguration', location: 'College Gate', type: 'ceremony', detail :[]},
+      { time: '09:00 AM', title: 'Shadows On Fabric', location: 'Sushrut Hall', type: 'competition', detail :[] },
       { time: '09:00 AM', title: 'Music Competitions', location: 'Auditorium', type: 'competition',detail: ['Crescendo : Solo Singing', 'Raaga Rumble : Classical Solo Singing', 'Falsetto : Western Solo Singing ', 'Mirror Third : Duet Singing' , 'Master of Puppets : Instrumental Solo Competition'] },
-      { time: '02:00 PM', title: 'Mock Parliament : Senate', location: 'Sushrut Hall', type: 'competition' },
-      { time: '07:00 PM', title: 'Camazotz Showdown : Dance Night', location: 'Central Ground', type: 'ceremony' },
+      { time: '02:00 PM', title: 'Mock Parliament : Senate', location: 'Sushrut Hall', type: 'competition', detail :[] },
+      { time: '07:00 PM', title: 'Camazotz Showdown : Dance Night', location: 'Central Ground', type: 'ceremony', detail :[] },
     ],
   },
   {
@@ -20,12 +20,12 @@ const schedule = [
     date: 'April 25, 2026',
     theme: '',
     events: [
-      { time: '09:00 AM', title: 'Blood Donation', location: 'Blood Bank', type: 'general', detail : [' Blood Bank above Old Trauama Centre'] },
-      { time: '09:00 AM', title: 'Hellfire Hustle : Dance Competition', location: 'Auditorium', type: 'competition' },
-      { time: '09:00 AM', title: 'Shutter Showdown : Photography', location: 'Charak Hall', type: 'competition' },
-      { time: '02:00 PM', title: 'Rounds : Beyond the Wards', location: 'Council Room', type: 'competition' },
-      { time: '02:00 PM', title: 'Parallel Canvas', location: 'Sushrut Hall', type: 'competition' },
-      { time: '07:00 PM', title: 'Kahaniyon ka Karawan : Drama', location: 'Central Ground', type: 'ceremony' },
+      { time: '09:00 AM', title: 'Blood Donation', location: 'Blood Bank above Old Trauma Centre', type: 'general', detail : [] },
+      { time: '09:00 AM', title: 'Hellfire Hustle : Dance Competition', location: 'Auditorium', type: 'competition', detail :[] },
+      { time: '09:00 AM', title: 'Shutter Showdown : Photography', location: 'Charak Hall', type: 'competition', detail :[] },
+      { time: '02:00 PM', title: 'Rounds : Beyond the Wards', location: 'Council Room', type: 'competition', detail :[] },
+      { time: '02:00 PM', title: 'Parallel Canvas', location: 'Sushrut Hall', type: 'competition', detail :[] },
+      { time: '07:00 PM', title: 'Kahaniyon ka Karawan : Drama', location: 'Central Ground', type: 'ceremony', detail :[] },
     ],
   },
   {
@@ -33,12 +33,12 @@ const schedule = [
     date: 'April 26, 2026',
     theme: '',
     events: [
-      { time: '09:00 AM', title: 'Tree Plantation', location: 'Campus', type: 'general' },
-      { time: '09:00 AM', title: 'Ica Aperture 2.0', location: 'Charak Hall', type: 'competition' },
-      { time: '09:00 AM', title: 'Spell The Ink', location: 'Sushrut Hall', type: 'competition' },
-      { time: '02:00 PM', title: 'Ideation Arena : Clash of Fandoms', location: 'Charak Hall', type: 'competition' },
-      { time: '02:00 PM', title: 'Frames of Life', location: 'Anatomy alley', type: 'competition' },
-      { time: '07:00 PM', title: 'Elixir : Fashion Show', location: 'Central Ground', type: 'competition' },
+      { time: '09:00 AM', title: 'Tree Plantation', location: 'Campus', type: 'general', detail :[] },
+      { time: '09:00 AM', title: 'Ica Aperture 2.0', location: 'Charak Hall', type: 'competition', detail :[] },
+      { time: '09:00 AM', title: 'Spell The Ink', location: 'Sushrut Hall', type: 'competition', detail :[] },
+      { time: '02:00 PM', title: 'Ideation Arena : Clash of Fandoms', location: 'Charak Hall', type: 'competition', detail :[] },
+      { time: '02:00 PM', title: 'Frames of Life', location: 'Anatomy alley', type: 'competition', detail :[] },
+      { time: '07:00 PM', title: 'Elixir : Fashion Show', location: 'Central Ground', type: 'competition', detail :[] },
     ],
   },
   {
@@ -46,12 +46,12 @@ const schedule = [
     date: 'April 27, 2026',
     theme: '',
     events: [
-      { time: '09:00 AM', title: 'Scent of Cinema', location: 'Charak Hall', type: 'ceremony' },
-      { time: '09:00 AM', title: 'Mission Impossible 2.0', location: 'Central Ground', type: 'ceremony' },
-      { time: '09:00 AM', title: 'Hawkin Streetz : Flash Mob', location: 'Central Ground', type: 'ceremony' },
-      { time: '09:00 AM', title: 'Verbal Gauntlet', location: 'Sushrut Hall', type: 'competition' },
-      { time: '02:00 PM', title: 'Stranger Bites', location: 'Dining Hall', type: 'general' },
-      { time: '07:00 PM', title: 'Ode to The Meds', location: 'Central Ground', type: 'ceremony' },
+      { time: '09:00 AM', title: 'Scent of Cinema', location: 'Charak Hall', type: 'ceremony', detail :[] },
+      { time: '09:00 AM', title: 'Mission Impossible 2.0', location: 'Central Ground', type: 'ceremony', detail :[] },
+      { time: '09:00 AM', title: 'Hawkin Streetz : Flash Mob', location: 'Central Ground', type: 'ceremony', detail :[] },
+      { time: '09:00 AM', title: 'Verbal Gauntlet', location: 'Sushrut Hall', type: 'competition', detail :[] },
+      { time: '02:00 PM', title: 'Stranger Bites', location: 'Dining Hall', type: 'general', detail :[] },
+      { time: '07:00 PM', title: 'Ode to The Meds', location: 'Central Ground', type: 'ceremony', detail :[] },
     ],
   },
 ];
@@ -141,7 +141,7 @@ export default function Schedule() {
             {schedule[activeDay].events.map((event, index) => (
             <div
   key={index}
-  className={`relative sm:pl-14 rounded-lg border transition-all duration-300 ${typeStyles[event.type]} ${event.detail ? 'cursor-pointer' : 'cursor-default'}`}
+  className={`relative sm:pl-14 rounded-lg border transition-all duration-300 ${typeStyles[event.type]} cursor-pointer`}
   onClick={() => event.detail && setExpandedEvent(expandedEvent === index ? null : index)}
 >
                 {/* Timeline dot */}
@@ -159,21 +159,18 @@ export default function Schedule() {
                   </div>
 
                   <div className="flex items-center gap-3 shrink-0">
-                    <div className="hidden sm:flex items-center gap-1.5 text-gray-500 text-sm">
-                      <MapPin size={13} />
-                      <span>{event.location}</span>
-                    </div>
-                    {event.detail && (
-  expandedEvent === index
-    ? <ChevronUp size={16} className="text-gray-400" />
-    : <ChevronDown size={16} className="text-gray-400" />
-)}
+                    {expandedEvent === index
+  ? <ChevronUp size={16} className="text-gray-400" />
+  : <ChevronDown size={16} className="text-gray-400" />
+}
                   </div>
                 </div>
 
                 {/* Expanded detail */}
      {expandedEvent === index && (
-  <div className="px-4 pb-4 pt-2 border-t border-white/10 space-y-2">
+  <div className="px-4 pb-4 pt-2 border-t border-white/10 space-y-3">
+
+    {/* 📄 Additional Details */}
     {event.detail && event.detail.length > 0 && (
       <ul className="space-y-1">
         {event.detail.map((item, i) => (
@@ -184,10 +181,12 @@ export default function Schedule() {
         ))}
       </ul>
     )}
-    <div className="flex items-center gap-2 text-sm text-gray-400 sm:hidden">
-      <MapPin size={13} />
+    {/* 📍 Location FIRST */}
+    <div className="flex items-center gap-2 text-sm text-gray-300">
+      <MapPin size={14} className="text-red-500" />
       <span>{event.location}</span>
     </div>
+
   </div>
 )}
               </div>
