@@ -6,6 +6,11 @@
   h1, h2, h3 {
   font-family: 'Rye', serif;
 }
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
