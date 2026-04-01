@@ -6,7 +6,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section
   id="home"
-  className="relative w-screen min-h-[100dvh] flex items-center justify-center overflow-hidden bg-black left-1/2 right-1/2 -mx-[50vw]"
+  className="relative w-screen min-h-[100dvh] flex items-start sm:items-center justify-center pt-28 sm:pt-0 overflow-hidden bg-black left-1/2 right-1/2 -mx-[50vw]"
   style={{
     backgroundImage: 'url(/Eucrasia/bg.png)',
     backgroundSize: 'cover',
