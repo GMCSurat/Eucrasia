@@ -80,7 +80,7 @@ export default function Schedule() {
     <section id="schedule" className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-black relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-950/10 to-black"></div>
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Heading */}
         <div className="text-center mb-16">
