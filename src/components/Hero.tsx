@@ -7,13 +7,17 @@ export default function Hero({ onNavigate }: HeroProps) {
     <section
   id="home"
   className="relative w-screen min-h-[100dvh] flex items-start sm:items-center justify-center pt-28 sm:pt-0 overflow-hidden bg-black left-1/2 right-1/2 -mx-[50vw]"
+  style={{}}
+>
+  <div
+  className="absolute inset-0 w-full h-full z-0 scale-105"
   style={{
     backgroundImage: 'url(/Eucrasia/bg.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
   }}
->
+></div>
 <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black via-red-950/20 to-black"></div>
 <div className="absolute inset-0 w-full h-full opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600 rounded-full blur-[120px] animate-pulse"></div>
