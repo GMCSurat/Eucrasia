@@ -13,6 +13,7 @@ export default function Registration() {
       { name: "Batch 105", link: "https://docs.google.com/forms/d/1RUPwL9zAcHVGwsjH2iUtGUV07D0Q1-32hBk8ge8Kbxw/viewform?usp=header" },
       { name: "Batch 106", link: "https://docs.google.com/forms/d/1XhxcBk-lMhvLVzb26qa-ExkKFpDfqkKoQkomAWyzXhY/viewform?usp=header" },
       { name: "Batch 107", link: "https://docs.google.com/forms/d/1tJAegqXvEMyk3Huyd0LxkMMUL4nIe_BEDVG3DqlPjXc/viewform?usp=header" },
+      { name: "Other Batches", link: "https://forms.gle/Gx617BMQvsTyZHim9" },
     ],
     PG: [
       { name: "PG Registration", link: "https://docs.google.com/forms/d/13O2StsfXDT_xcnbRE0KPusXRSd_BGL6G_viRv7W6ByU/viewform?usp=header" }
