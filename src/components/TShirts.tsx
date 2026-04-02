@@ -10,11 +10,25 @@ export default function TShirts() {
     transformOrigin: 'center',
   });
 
+  // ✅ Detect mobile
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     setSelectedImage('/Eucrasia/Eucrasia_front.jpeg');
+
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const handleMouseMove = (e) => {
+    if (isMobile) return; // ❌ disable zoom on mobile
+
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
 
     const x = ((e.clientX - left) / width) * 100;
@@ -27,6 +41,8 @@ export default function TShirts() {
   };
 
   const handleMouseLeave = () => {
+    if (isMobile) return;
+
     setZoomStyle({
       transform: 'scale(1)',
       transformOrigin: 'center',
@@ -48,10 +64,10 @@ export default function TShirts() {
           <p className="text-gray-400 text-lg">Limited edition merchandise</p>
         </div>
 
-        {/* GRID (60-40 layout, top aligned) */}
+        {/* GRID */}
         <div className="grid md:grid-cols-[1.3fr_1fr] gap-12 items-start">
           
-          {/* LEFT → IMAGE */}
+          {/* LEFT */}
           <div className="flex flex-col">
             
             <div
@@ -63,7 +79,7 @@ export default function TShirts() {
                 src={selectedImage}
                 alt="T-Shirt"
                 className="w-full h-full object-cover transition-transform duration-200"
-                style={zoomStyle}
+                style={isMobile ? {} : zoomStyle} // ✅ disable zoom style on mobile
               />
             </div>
 
@@ -90,7 +106,7 @@ export default function TShirts() {
             </div>
           </div>
 
-          {/* RIGHT → BUY CARD */}
+          {/* RIGHT CARD */}
           <a
             href="https://forms.gle/your-google-form-link"
             target="_blank"
