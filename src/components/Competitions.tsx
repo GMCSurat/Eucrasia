@@ -27,7 +27,7 @@ export default function Competitions() {
     Informal: [
       { name: "Lemon Things Got Strange", link: "https://forms.gle/hdGyEzyu2pndYwec6" },
       { name: "Voices of Upside Down", link: "https://forms.gle/ue2BagyTp3LDCdkw8" },
-      { name: "Still like Steve Harrington", link: "https://forms.gle/bBUoftCkhienkibN9" }
+      { name: "Steal like Steve Harrington", link: "https://forms.gle/bBUoftCkhienkibN9" }
     ],
     "Open Mic": [
       { name: "Spill the Ink", link: "https://forms.gle/wWwBeGZ6w6AndDrN9" }
