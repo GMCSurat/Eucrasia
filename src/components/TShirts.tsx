@@ -2,7 +2,7 @@ import { ShoppingBag } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function TShirts() {
-  const price = 499;
+  const price = 250;
 
   const [selectedImage, setSelectedImage] = useState('');
   const [zoomStyle, setZoomStyle] = useState({
@@ -108,7 +108,7 @@ export default function TShirts() {
 
           {/* RIGHT CARD */}
           <a
-            href="https://forms.gle/your-google-form-link"
+            href="https://forms.gle/dkuSR5vNZLdRZ1EL8"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-sm bg-gray-900/50 backdrop-blur-md p-6 rounded-lg 
@@ -123,7 +123,7 @@ export default function TShirts() {
             <ShoppingBag className="text-red-500 mb-4" size={50} />
 
             <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">
-              Eucrasia Official T-Shirt
+              EUCRASIA Official T-Shirt
             </h3>
 
             <p className="text-gray-400 mb-4">

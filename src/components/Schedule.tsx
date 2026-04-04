@@ -5,7 +5,7 @@ const schedule = [
   {
     day: 'Day 1',
     date: 'April 24, 2026',
-    theme: 'Opening Ceremony & Kickoff',
+    theme: '',
     events: [
       { time: '06:00 AM', title: 'Marathon',location : 'College Campus', type: 'general', detail :[]},
       { time: '08:00 AM', title: 'Inauguration', location: 'College Gate', type: 'ceremony', detail :[]},
