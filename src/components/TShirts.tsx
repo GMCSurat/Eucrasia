@@ -59,7 +59,7 @@ export default function TShirts() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl font-bold text-red-600 mb-4 tracking-wider drop-shadow-[0_0_10px_rgba(239,68,68,0.8)]">
-            EVENT T-SHIRTS
+            EVENT T-SHIRT
           </h2>
           <p className="text-gray-400 text-lg">Limited edition merchandise</p>
         </div>
