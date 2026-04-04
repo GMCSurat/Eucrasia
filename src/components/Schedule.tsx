@@ -21,7 +21,7 @@ const schedule = [
     theme: '',
     events: [
       { time: '09:00 AM', title: 'Blood Donation', location: 'Blood Bank above Old Trauma Centre', type: 'general', detail : [] },
-      { time: '09:00 AM', title: 'Hellfire Hustle : Dance Competition', location: 'Auditorium', type: 'competition', detail :[] },
+      { time: '09:00 AM', title: 'Hawkins Hustle : Dance Competition', location: 'Auditorium', type: 'competition', detail :[] },
       { time: '09:00 AM', title: 'Shutter Showdown : Photography', location: 'Charak Hall', type: 'competition', detail :[] },
       { time: '02:00 PM', title: 'Rounds : Beyond the Wards', location: 'Council Room', type: 'competition', detail :[] },
       { time: '02:00 PM', title: 'Parallel Canvas', location: 'Sushrut Hall', type: 'competition', detail :[] },
