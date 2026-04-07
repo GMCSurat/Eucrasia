@@ -41,6 +41,14 @@ export default function Footer() {
               >
                 <Instagram size={24} />
               </a>
+              <a
+                href="https://www.instagram.com/eucrasia_competitions?utm_source=qr&igsh=MTFib3UwNDk4bndxMw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center text-red-500 hover:bg-red-600 hover:text-white transition-all duration-300 hover:neon-border"
+              >
+                <Instagram size={24} />
+              </a>
             </div>
             <div className="mt-6">
               <h5 className="text-sm font-semibold text-gray-400 mb-2">Event Duration</h5>

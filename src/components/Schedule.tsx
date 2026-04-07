@@ -5,20 +5,20 @@ const schedule = [
   {
     day: 'Day 1',
     date: 'April 24, 2026',
-    theme: '',
+    theme: 'The Opening Gate',
     events: [
       { time: '06:00 AM', title: 'Marathon',location : 'College Campus', type: 'general', detail :[]},
       { time: '08:00 AM', title: 'Inauguration', location: 'College Gate', type: 'ceremony', detail :[]},
       { time: '09:00 AM', title: 'Shadows On Fabric', location: 'Sushrut Hall', type: 'competition', detail :[] },
       { time: '09:00 AM', title: 'Music Competitions', location: 'Auditorium', type: 'competition',detail: ['Crescendo : Solo Singing', 'Raaga Rumble : Classical Solo Singing', 'Falsetto : Western Solo Singing ', 'Mirror Third : Duet Singing' , 'Master of Puppets : Instrumental Solo Competition'] },
-      { time: '02:00 PM', title: 'Mock Parliament : Senate', location: 'Sushrut Hall', type: 'competition', detail :[] },
+      { time: '09:00 AM', title: 'Mock Parliament : Senate', location: 'Sushrut Hall', type: 'competition', detail :[] },
       { time: '07:00 PM', title: 'Camazotz Showdown : Dance Night', location: 'Central Ground', type: 'ceremony', detail :[] },
     ],
   },
   {
     day: 'Day 2',
     date: 'April 25, 2026',
-    theme: '',
+    theme: 'Into The Upside Down',
     events: [
       { time: '09:00 AM', title: 'Blood Donation', location: 'Blood Bank above Old Trauma Centre', type: 'general', detail : [] },
       { time: '09:00 AM', title: 'Hawkins Hustle : Dance Competition', location: 'Auditorium', type: 'competition', detail :[] },
@@ -31,7 +31,7 @@ const schedule = [
   {
     day: 'Day 3',
     date: 'April 26, 2026',
-    theme: '',
+    theme: 'The Mind Flayer Night',
     events: [
       { time: '09:00 AM', title: 'Tree Plantation', location: 'Campus', type: 'general', detail :[] },
       { time: '09:00 AM', title: 'Ica Aperture 2.0', location: 'Charak Hall', type: 'competition', detail :[] },
@@ -44,11 +44,11 @@ const schedule = [
   {
     day: 'Day 4',
     date: 'April 27, 2026',
-    theme: '',
+    theme: 'Back to Hawkins',
     events: [
       { time: '09:00 AM', title: 'Scent of Cinema', location: 'Charak Hall', type: 'ceremony', detail :[] },
       { time: '09:00 AM', title: 'Mission Impossible 2.0', location: 'Central Ground', type: 'ceremony', detail :[] },
-      { time: '09:00 AM', title: 'Hawkin Streetz : Flash Mob', location: 'Central Ground', type: 'ceremony', detail :[] },
+      { time: '09:00 AM', title: 'Hellfire Streetz : Flash Mob', location: 'Central Ground', type: 'ceremony', detail :[] },
       { time: '09:00 AM', title: 'Verbal Gauntlet', location: 'Sushrut Hall', type: 'competition', detail :[] },
       { time: '02:00 PM', title: 'Stranger Bites', location: 'Dining Hall', type: 'general', detail :[] },
       { time: '07:00 PM', title: 'Ode to The Meds', location: 'Central Ground', type: 'ceremony', detail :[] },

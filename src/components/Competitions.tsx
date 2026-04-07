@@ -37,7 +37,7 @@ export default function Competitions() {
     Informal: {
       events: [
         { name: "Lemon Things Got Strange", link: "https://forms.gle/hdGyEzyu2pndYwec6" },
-        { name: "Voices of Upside Down", link: "https://forms.gle/ue2BagyTp3LDCdkw8" },
+        { name: "The Blind Bold Escape", link: "https://forms.gle/ue2BagyTp3LDCdkw8" },
         { name: "Steal like Steve Harrington", link: "https://forms.gle/bBUoftCkhienkibN9" }
       ]
     },
@@ -48,8 +48,8 @@ export default function Competitions() {
     },
     Art: {
       events: [
-        { name: "Parallel Canvas", link: "https://docs.google.com/forms/d/e/1FAIpQLSd2UGaadsQbHYClAi0FT0oTu-uS_248pTVrTEKSuO5khw7CRg/viewform?usp=publish-editor" },
-        { name: "Shadows on Fabric", link: "https://docs.google.com/forms/d/e/1FAIpQLScyKTHD9HqQMejMV9ziR8xx8CBnzE_168N5VMyinALwwuSv1A/viewform?usp=header" }
+        { name: "Parallel Canvas", link: "https://forms.gle/L2C2WkvoD4tkgtdC7" },
+        { name: "Shadows on Fabric", link: "https://forms.gle/X4wZRUPwTUJzq38d6" }
       ]
     },
     Quiz: {
